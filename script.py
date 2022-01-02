@@ -78,7 +78,7 @@ def checkChara(hero):
 def changeWeapon(hero):
     isRepeatInput = "y"
     while isRepeatInput != "n" and isRepeatInput != "N":
-        print("Select 1 Hero you want to change the weapon: ")
+        print("\nSelect 1 Hero you want to change the weapon: ")
         for i in range(len(hero)):
             print("Id : {}".format(i))
             print("Detail : {}".format(hero[i]))
