@@ -28,7 +28,7 @@ polearm = [{"Name" : "Engulfing Lightning", "ATK" : 300},
 
 
 def login():
-    arr_user = np.array = ([["admin", "admin123", "admin"], ["user", "user123", "user"]])
+    arr_user = np.array = ([["user", "user123", "user"]])
 
     print("\n" "*** LOGIN ****" "\n")
     username = input("Username : " "\t")
@@ -36,8 +36,8 @@ def login():
 
     while True:
         for x in arr_user:
-            if username == x[0] and password == x[1] and x[2] == "admin":
-                print("\n\n" + "*** Welcome to Admin ***" + x[0])
+            if username == x[0] and password == x[1] and x[2] == "user":
+                print("\n\n" + "*** WELCOME TO GAME ***" + x[0])
                 menu(chooseHero())
                 break
         print("Anda berhasil logout \n\n")
