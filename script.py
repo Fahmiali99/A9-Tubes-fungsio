@@ -40,11 +40,11 @@ def login():
                 print("\n\n*** Welcome to Game ***\n")
                 menu(chooseHero())
                 break
-        print("Wrong Input \n\n")
+        print("Program Logout \n\n")
         break
 
 def chooseHero():
-  print("\nSelect 1 Hero you want to play: ")
+  print("Select 4 Hero you want to play: \n")
   selectedhero = []
   inputarr = []
   for i in range(len(allcharacter)):
@@ -169,8 +169,6 @@ def menu(hero):
             azdahaFight(hero[inputFighter]["ATK"], defaultHpAzdaha)
         elif(inputMenu == 4):
             repeat = False
-
-# menu(chooseHero())
 
 arr_admin = np.array = ([[]])
 login()
