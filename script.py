@@ -37,14 +37,14 @@ def login():
     while True:
         for x in arr_user:
             if username == x[0] and password == x[1] and x[2] == "user":
-                print("\n\n" + "*** Welcome to Game" + "***\n")
+                print("\n\n*** Welcome to Game ***\n")
                 menu(chooseHero())
                 break
-        print("Anda berhasil logout \n\n")
+        print("Wrong Input \n\n")
         break
 
 def chooseHero():
-  print("Select 1 Hero you want to play: ")
+  print("\nSelect 1 Hero you want to play: ")
   selectedhero = []
   inputarr = []
   for i in range(len(allcharacter)):
@@ -55,9 +55,9 @@ def chooseHero():
         isValid = False
         inputs = 0
         while isValid == False :
-            inputs = input("silahkan masukkan pilihan Id: ")
+            inputs = input("\nSilahkan masukkan pilihan Id: ")
             if(inputs in inputarr):
-                print("Error: hero has been picked!")
+                print("\nError: hero has been picked!")
                 isValid = False
             else:
                 isValid = True
