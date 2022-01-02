@@ -37,7 +37,7 @@ def login():
     while True:
         for x in arr_user:
             if username == x[0] and password == x[1] and x[2] == "user":
-                print("\n\n" + "*** WELCOME TO GAME ***" + x[0])
+                print("\n\n" + "*** Welcome to Game" + "***\n")
                 menu(chooseHero())
                 break
         print("Anda berhasil logout \n\n")
